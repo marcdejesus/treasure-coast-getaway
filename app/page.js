@@ -349,7 +349,7 @@ export default function TreasureCoastGetaway() {
               {
                 name: "The Williams Family",
                 location: "Atlanta, GA",
-                quote: "We&apos;ve rented many vacation homes over the years, but this was by far the best. The location is perfect - private but close to everything, and the home is beautifully maintained. Our kids didn&apos;t want to leave!"
+                quote: "We've rented many vacation homes over the years, but this was by far the best. The location is perfect - private but close to everything, and the home is beautifully maintained. Our kids didn&apos;t want to leave!"
               }
             ].map((testimonial, index) => (
               <Card key={index} className="bg-white border-teal-100">
@@ -380,7 +380,7 @@ export default function TreasureCoastGetaway() {
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-xl font-bold mb-4">Treasure Coast Getaway</h3>
               <p className="text-teal-200 mb-4">
-                Your luxury beachfront escape on Florida's beautiful Treasure Coast.
+                Your luxury beachfront escape on Florida&apos;s beautiful Treasure Coast.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-white hover:text-teal-300">
