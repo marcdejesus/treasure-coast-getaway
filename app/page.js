@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 
 export default function TreasureCoastGetaway() {
   return (
@@ -110,11 +111,20 @@ export default function TreasureCoastGetaway() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">Gallery</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                <img 
-                  src={`/api/placeholder/600/400`} 
-                  alt={`Gallery image ${item}`} 
+            {[
+              { src: "/entrance.jpg", alt: "Entrance view" },
+              { src: "/kitchen.jpg", alt: "Modern kitchen" },
+              { src: "/master-bathroom.jpg", alt: "Master bathroom" },
+              { src: "/master.jpg", alt: "Master bedroom" },
+              { src: "/pool.jpg", alt: "Swimming pool" },
+              { src: "/pool2.jpg", alt: "Pool view" }
+            ].map((image, index) => (
+              <div key={index} className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <Image 
+                  src={image.src}
+                  alt={image.alt}
+                  width={600}
+                  height={400}
                   className="w-full h-64 object-cover"
                 />
               </div>
