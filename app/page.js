@@ -3,23 +3,27 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
 export default function TreasureCoastGetaway() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-teal-50 to-blue-50">
+      {/* Add Navbar */}
+      <Navbar />
+      
       {/* Header/Hero Section */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <header id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center z-0" 
           style={{ 
-            backgroundImage: "url('/api/placeholder/1920/1080')",
+            backgroundImage: `url("/outside-front.jpg")`,
             filter: "brightness(0.7)"
           }} 
         />
         
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
-            Treasure Coast <span className="text-yellow-300">Getaway</span>
+            Treasure Coast <span className="text-amber-500">Getaway</span>
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md">
             Experience paradise on Florida's beautiful Treasure Coast
@@ -44,7 +48,7 @@ export default function TreasureCoastGetaway() {
       </header>
 
       {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="features" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">Paradise Awaits You</h2>
           
@@ -101,7 +105,7 @@ export default function TreasureCoastGetaway() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-50">
+      <section id="gallery" className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">Gallery</h2>
           
@@ -230,7 +234,7 @@ export default function TreasureCoastGetaway() {
       </section>
 
       {/* Booking Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-800 text-white">
+      <section id="booking" className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-800 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
