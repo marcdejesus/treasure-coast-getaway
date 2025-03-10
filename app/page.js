@@ -27,7 +27,7 @@ export default function TreasureCoastGetaway() {
             Treasure Coast <span className="text-amber-500">Getaway</span>
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md">
-            Experience paradise on Florida's beautiful Treasure Coast
+            Experience paradise on Florida&apos;s beautiful Treasure Coast
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white">
@@ -178,7 +178,7 @@ export default function TreasureCoastGetaway() {
                       <span className="mr-2 text-teal-600">✓</span> High-speed WiFi throughout
                     </li>
                     <li className="flex items-center">
-                      <span className="mr-2 text-teal-600">✓</span> 65" Smart TV with streaming services
+                      <span className="mr-2 text-teal-600">✓</span> 65&quot; Smart TV with streaming services
                     </li>
                     <li className="flex items-center">
                       <span className="mr-2 text-teal-600">✓</span> Bluetooth sound system
@@ -284,7 +284,7 @@ export default function TreasureCoastGetaway() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">100% satisfaction guarantee</h3>
-                    <p className="text-teal-100">We're committed to making your stay perfect</p>
+                    <p className="text-teal-100">We&apos;re committed to making your stay perfect</p>
                   </div>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export default function TreasureCoastGetaway() {
               {
                 name: "Jennifer & Family",
                 location: "Chicago, IL",
-                quote: "Treasure Coast Getaway exceeded all our expectations. The private beach access was incredible, and the villa had everything we needed for our family of 5. We're already planning our return trip!"
+                quote: "Treasure Coast Getaway exceeded all our expectations. The private beach access was incredible, and the villa had everything we needed for our family of 5. We&apos;re already planning our return trip!"
               },
               {
                 name: "Michael & Sarah",
@@ -349,7 +349,7 @@ export default function TreasureCoastGetaway() {
               {
                 name: "The Williams Family",
                 location: "Atlanta, GA",
-                quote: "We've rented many vacation homes over the years, but this was by far the best. The location is perfect - private but close to everything, and the home is beautifully maintained. Our kids didn't want to leave!"
+                quote: "We&apos;ve rented many vacation homes over the years, but this was by far the best. The location is perfect - private but close to everything, and the home is beautifully maintained. Our kids didn&apos;t want to leave!"
               }
             ].map((testimonial, index) => (
               <Card key={index} className="bg-white border-teal-100">
@@ -365,7 +365,7 @@ export default function TreasureCoastGetaway() {
                   <CardDescription className="text-teal-600">{testimonial.location}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700 italic">"{testimonial.quote}"</p>
+                  <p className="text-gray-700 italic">&quot;{testimonial.quote}&quot;</p>
                 </CardContent>
               </Card>
             ))}
