@@ -124,3 +124,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add this to your existing globals.css or create it if it doesn't exist */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add this class for JavaScript-based smooth scrolling */
+.smooth-scroll {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Optional: Add scroll animations for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
