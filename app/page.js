@@ -83,12 +83,20 @@ export default function TreasureCoastGetaway() {
             Experience paradise on Florida&apos;s beautiful Treasure Coast
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white">
-              Book Now
-            </Button>
-            <Button size="lg" variant="outline" className="bg-white/20 backdrop-blur-sm text-white border-white hover:bg-white/30">
-              View Gallery
-            </Button>
+            <a 
+              href="https://www.airbnb.com/rooms/953226587982597312?adults=8&check_in=2025-04-01&check_out=2025-04-05&search_mode=regular_search&source_impression_id=p3_1741652763_P3uYvCbUiDOw5PuM&previous_page_section_name=1000&federated_search_id=56743edb-f0ff-488d-b37a-2876877dde75" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white">
+                Book Now
+              </Button>
+            </a>
+            <a href="#gallery">
+              <Button size="lg" variant="outline" className="bg-white/20 backdrop-blur-sm text-white border-white hover:bg-white/30">
+                View Gallery
+              </Button>
+            </a>
           </div>
         </div>
         
