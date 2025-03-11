@@ -444,13 +444,13 @@ export default function TreasureCoastGetaway() {
                   <h3 className="font-semibold text-xl text-teal-800 mb-4 mt-6">Additional Information</h3>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      Our beautiful vacation home is designed to provide you with all the comforts of home while enjoying the paradise of Florida's Treasure Coast. We've thoughtfully equipped the property with everything you might need for a memorable stay.
+                      Our beautiful vacation home is designed to provide you with all the comforts of home while enjoying the paradise of Florida&apos;s Treasure Coast. We&apos;ve thoughtfully equipped the property with everything you might need for a memorable stay.
                     </p>
                     <p>
-                      From beach equipment to kitchen essentials, we've got you covered. Our goal is to create a stress-free environment where you can relax, make memories, and enjoy quality time with loved ones.
+                      From beach equipment to kitchen essentials, we&apos;ve got you covered. Our goal is to create a stress-free environment where you can relax, make memories, and enjoy quality time with loved ones.
                     </p>
                     <p>
-                      If you have any questions about specific amenities or features, please don't hesitate to reach out to us directly!
+                      If you have any questions about specific amenities or features, please don&apos;t hesitate to reach out to us directly!
                     </p>
                   </div>
                 </div>
@@ -485,12 +485,12 @@ export default function TreasureCoastGetaway() {
               {
                 name: "Cecilia",
                 location: "Portage, IN",
-                quote: "Sandra was such an amazing host. Her home was beautiful . My family and I felt like we were at home. The house was super clean and Sandra provided everything we needed for our stay. We definitely hope to be back next year. Thank you for having"
+                quote: "Sandra was such an amazing host. Her home was beautiful. My family and I felt like we were at home. The house was super clean and Sandra provided everything we needed for our stay. We definitely hope to be back next year. Thank you for having us!"
               },
               {
                 name: "Don",
                 location: "Weyerhaeuser, WI",
-                quote: "The house was very clean and beautifully decorated. Everything you need is there. The beds were comfortable and the rooms were quiet. The pools is heated and clean. The moment you walked in you felt relaxed and at home. The hosts are very responsive and accommodating."
+                quote: "The house was very clean and beautifully decorated. Everything you need is there. The beds were comfortable and the rooms were quiet. The pool is heated and clean. The moment you walked in you felt relaxed and at home. The hosts are very responsive and accommodating."
               }
             ].map((testimonial, index) => (
               <Card key={index} className="bg-teal-50 border-teal-100">
