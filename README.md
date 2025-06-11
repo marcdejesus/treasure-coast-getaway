@@ -244,13 +244,6 @@ Treasure Coast Getaway is a luxury 4-bedroom, 2-bathroom vacation rental located
 
 Perfect for families, groups, and anyone looking to experience the beauty of Florida's Treasure Coast.
 
-## 📞 Contact & Support
-
-- **Property Inquiries**: treasurecoastpropertyrentals@gmail.com
-- **Phone**: (586) 904-1191
-- **Address**: 6718 Northwest Mamie Court, Port St. Lucie, FL
-- **Booking**: [Airbnb Listing](https://www.airbnb.com/rooms/953226587982597312)
-
 ---
 
 **Built with ❤️ for creating memorable vacation experiences on Florida's Treasure Coast**
