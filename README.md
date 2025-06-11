@@ -53,7 +53,7 @@ A modern, responsive vacation rental website built with Next.js 15, featuring a 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/treasure-coast-getaway.git
+   git clone https://github.com/marcdejesus/treasure-coast-getaway.git
    cd treasure-coast-getaway
    ```
 
