@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://treasurecoastgetaway.com
+
+# Sitemaps
+Sitemap: https://treasurecoastgetaway.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Block access to admin or private areas (if any)
+Disallow: /admin/
+Disallow: /.env
+Disallow: /api/private/
+
+# Allow access to important pages
+Allow: /
+Allow: /gallery
+Allow: /features
+Allow: /contact 

@@ -19,9 +19,11 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-8 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-full flex items-center justify-center gap-1 z-50 transition-all duration-300 backdrop-blur-md ${
+      className={`fixed top-4 sm:top-8 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-full flex items-center justify-center gap-1 z-50 transition-all duration-300 backdrop-blur-md ${
         scrolled ? 'bg-white/80 shadow-lg' : 'bg-teal-600/80'
       }`}
+      role="navigation"
+      aria-label="Main navigation"
     >
       <NavItem href="#home" icon={<Home />} label="Home" active={scrolled} />
       <NavItem href="#features" icon={<Grid />} label="Features" active={scrolled} />
@@ -40,34 +42,40 @@ const NavItem = ({ href, icon, label, active, isExternal = false }) => {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex flex-col items-center justify-center px-4 py-2 rounded-full transition-all hover:bg-teal-100/50 ${
+        className={`flex flex-col items-center justify-center px-2 sm:px-4 py-2 rounded-full transition-all hover:bg-teal-100/50 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 min-h-[44px] min-w-[44px] ${
           active ? 'text-teal-800' : 'text-white'
         }`}
+        aria-label={`${label} - opens in new window`}
       >
         <span className="mb-1">
           {React.cloneElement(icon, { 
-            size: 20,
-            className: active ? 'text-teal-600' : 'text-current' 
+            size: 18,
+            className: active ? 'text-teal-600' : 'text-current',
+            'aria-hidden': true
           })}
         </span>
-        <span className="text-xs font-medium">{label}</span>
+        <span className="text-xs font-medium hidden sm:block">{label}</span>
+        <span className="sr-only sm:hidden">{label}</span>
       </a>
     );
   }
   return (
     <Link 
       href={href}
-      className={`flex flex-col items-center justify-center px-4 py-2 rounded-full transition-all hover:bg-teal-100/50 ${
+      className={`flex flex-col items-center justify-center px-2 sm:px-4 py-2 rounded-full transition-all hover:bg-teal-100/50 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 min-h-[44px] min-w-[44px] ${
         active ? 'text-teal-800' : 'text-white'
       }`}
+      aria-label={label}
     >
       <span className="mb-1">
         {React.cloneElement(icon, { 
-          size: 20,
-          className: active ? 'text-teal-600' : 'text-current' 
+          size: 18,
+          className: active ? 'text-teal-600' : 'text-current',
+          'aria-hidden': true
         })}
       </span>
-      <span className="text-xs font-medium">{label}</span>
+      <span className="text-xs font-medium hidden sm:block">{label}</span>
+      <span className="sr-only sm:hidden">{label}</span>
     </Link>
   );
 };

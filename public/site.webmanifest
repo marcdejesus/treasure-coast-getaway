@@ -1,0 +1,26 @@
+{
+  "name": "Treasure Coast Getaway",
+  "short_name": "TCG",
+  "description": "Luxury vacation rental with private pool on Florida's Treasure Coast",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D9488",
+  "theme_color": "#0D9488",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["travel", "lifestyle"],
+  "lang": "en",
+  "scope": "/",
+  "id": "treasure-coast-getaway"
+} 
