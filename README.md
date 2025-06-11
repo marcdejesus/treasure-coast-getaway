@@ -1,4 +1,4 @@
-D# 🏖️ Treasure Coast Getaway
+# 🏖️ Treasure Coast Getaway
 
 A modern, responsive vacation rental website built with Next.js 15, featuring a luxury 4-bedroom home with private pool on Florida's beautiful Treasure Coast.
 
